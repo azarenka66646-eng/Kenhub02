@@ -71,7 +71,7 @@ local function CircleRipple(btn, mx, my)
             Name = "Ripple",
             Image = "rbxassetid://106912537640368",
             ImageColor3 = Color3.fromRGB(255, 255, 255),
-            ImageTransparency = 0.82,
+            imageTransparency = 0.82,
             BackgroundTransparency = 1,
             ZIndex = btn.ZIndex + 5,
             Size = UDim2.new(0, 0, 0, 0),
@@ -754,8 +754,8 @@ local function ShowKeyUI()
     })
 
     local socials = {
-        { img = "rbxassetid://129297846250682", col = Color3.fromRGB(100, 120, 255) },
-        { img = "http://www.roblox.com/asset/?id=14620084334", col = Color3.fromRGB(185, 130, 255) },
+        { img = "rbxassetid://106912537640368", col = Color3.fromRGB(100, 120, 255) },
+        { img = "http://www.roblox.com/asset/?id=106912537640368", col = Color3.fromRGB(185, 130, 255) },
     }
     local icSz = 26
     local totW = #socials * icSz + (#socials - 1) * 8
