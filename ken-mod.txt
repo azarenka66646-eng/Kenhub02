@@ -2,14 +2,14 @@ local Directory = "https://raw.githubusercontent.com/flazhy/ken-m0d/refs/heads/m
 local Api = "https://api.luarmor.net/files/v4/loaders"
 local Scripts = {
     Free = {
-        [994732206] = Directory .. "/BloxFruits.lua",
-        [9186719164] = Directory .. "/SailorPiece.lua",
-        [8191429227] = Directory .. "/CutTrees.lua",
+        [106912537640368] = Directory .. "/BloxFruits.lua",
+        [106912537640368] = Directory .. "/SailorPiece.lua",
+        [106912537640368] = Directory .. "/CutTrees.lua",
     },
     Premium = {
-        [994732206] = Api .. "/0ae9fe4cf963e3a13d25eed0e2ce5940.lua",
+        [106912537640368] = Api .. "/0ae9fe4cf963e3a13d25eed0e2ce5940.lua",
         [10004244222] = Api .. "/63980a492928552d074ceee243a918d6.lua",
-        [9792947201] = Api .. "/50e8e00251d97215e14313c0bb012058.lua",
+        [106912537640368] = Api .. "/50e8e00251d97215e14313c0bb012058.lua",
         [10200395747] = Api.."/65265b2869c03f57430ee45357d8c3f9.lua"
     }
 }
@@ -126,7 +126,7 @@ local function ShowKeyUI()
     local submitting = false
 
     local supportInfo = {
-        { label = "Discord", value = "discord.gg/onyxfam" },
+        { label = "Discord", value = "" },
         { label = "Game", value = (pcall(function()
             return game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name end) and game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name) or "Unknown" },
         { label = "Version", value = "v.Freemium" },
@@ -646,7 +646,7 @@ local function ShowKeyUI()
 
             local code = status.code or ""
             if code == "KEY_VALID" then
-                isPremium = true
+                ipremium = true
                 resultKey = keyStr
                 SaveKey(keyStr)
                 getgenv().script_key = keyStr
