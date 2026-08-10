@@ -18,7 +18,7 @@ local Button = Tab:Button({
     Color = Color3.fromHex("#191970"),
     Locked = false,
     Callback = function()
-        setclipboard("https://beacons.ai/the_real_panda")
+        setclipboard("https://tiktok.com/@kendelta88")
         WindUI:Notify({
             Title = "...",
             Content = "Copied!",
@@ -35,11 +35,11 @@ local Tab = Window:Tab({
 })
 
 local Button = Tab:Button({
-    Title = "Load redz script",
+    Title = "Load Quangtumonyx",
     Color = Color3.fromHex("#191970"),
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nvb201112/the_real_Panda-Hub/refs/heads/main/redz.luau"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
         WindUI:Notify({
             Title = "Loader",
             Content = "Load redz complete!",
@@ -50,11 +50,27 @@ local Button = Tab:Button({
 })
 
 local Button = Tab:Button({
-    Title = "Load bnn script",
+    Title = "Load banana script",
     Color = Color3.fromHex("#191970"),
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nvb201112/the_real_Panda-Hub/refs/heads/main/bnn.luau"))()
+        WindUI:Notify({
+            Title = "Loader",
+            Content = "Load bnn complete!",
+            Duration = 3, -- 3 seconds
+            Icon = "loader",
+})
+    end
+})
+
+local Button = Tab:Button({
+    Title = "teddy hub",
+    Color = Color3.fromHex("#191970"),
+    Locked = false,
+    Callback = function()
+        repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TeddyHub.lua"))()
         WindUI:Notify({
             Title = "Loader",
             Content = "Load bnn complete!",
@@ -75,7 +91,7 @@ local Button = Tab:Button({
     Color = Color3.fromHex("#191970"),
     Locked = false,
     Callback = function()
-        setclipboard("https://beacons.ai/the_real_panda")
+        setclipboard("https://tiktok.com/@kendelta88")
         WindUI:Notify({
             Title = "...",
             Content = "Copied!",
